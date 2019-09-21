@@ -43,7 +43,7 @@ public class MainActivity extends Activity {
     private static final UUID MY_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
 
     // MAC-address of Bluetooth module (you must edit this line)
-    private static String address = "20:16:03:08:64:39";
+    private static String address = "98:D3:61:FD:59:9D";
 
     /** Called when the activity is first created. */
     @Override
@@ -101,7 +101,7 @@ public class MainActivity extends Activity {
         btnLed1.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 mConnectedThread.write("1");
-                //Toast.makeText(getBaseContext(), "Turn on First LED", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(), "Turn on First LED", Toast.LENGTH_SHORT).show();
             }
         });
         btnLed2.setOnClickListener(new OnClickListener() {
